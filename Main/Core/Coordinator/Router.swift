@@ -1,5 +1,5 @@
 //
-//  RouterImpl.swift
+//  Router.swift
 //  Coordinator
 //
 //  Created by Nurlan Tolegenov on 8/20/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class RouterImp {
+final class Router {
     private weak var navigationController: UINavigationController?
     private var completions: [UIViewController : () -> Void]
     
@@ -16,9 +16,7 @@ final class RouterImp {
         self.navigationController = navigationController
         completions = [:]
     }
-}
-
-extension RouterImp: Router {
+    
     func present(_ module: Presentable?) {
         present(module, animated: true)
     }
@@ -112,7 +110,7 @@ extension RouterImp: Router {
     }
 }
 
-extension RouterImp: Presentable {
+extension Router: Presentable {
     func toPresent() -> UIViewController? {
         navigationController
     }

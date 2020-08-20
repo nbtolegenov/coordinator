@@ -1,5 +1,5 @@
 //
-//  Coordinator.swift
+//  ModuleFactory.swift
 //  Coordinator
 //
 //  Created by Nurlan Tolegenov on 8/20/20.
@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol Coordinator: class {
-    func start()
-}
+final class ModuleFactory {}
