@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		9D1AE84A24EE98E5006D3AEF /* CompositeAppDelegateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE84924EE98E5006D3AEF /* CompositeAppDelegateConfigurator.swift */; };
 		9D1AE84C24EE991F006D3AEF /* UiAppDelegateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE84B24EE991F006D3AEF /* UiAppDelegateConfigurator.swift */; };
+		9D1AE85224EE9BB7006D3AEF /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE85124EE9BB7006D3AEF /* UITableView+Dequeue.swift */; };
+		9D1AE85424EE9BD3006D3AEF /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE85324EE9BD3006D3AEF /* UITableView+Register.swift */; };
+		9D1AE85924EE9C30006D3AEF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE85824EE9C30006D3AEF /* Router.swift */; };
+		9D1AE85B24EE9CC5006D3AEF /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE85A24EE9CC5006D3AEF /* Presentable.swift */; };
+		9D1AE8D824EEA1A6006D3AEF /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8D724EEA1A6006D3AEF /* RouterImpl.swift */; };
+		9D1AE8DA24EEA9B3006D3AEF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8D924EEA9B3006D3AEF /* Coordinator.swift */; };
+		9D1AE8DC24EEAA0B006D3AEF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8DB24EEAA0B006D3AEF /* BaseCoordinator.swift */; };
+		9D1AE8DE24EEAB82006D3AEF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8DD24EEAB82006D3AEF /* BaseView.swift */; };
 		9D54B9C624EE96D100CF3661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54B9C524EE96D100CF3661 /* AppDelegate.swift */; };
 		9D54B9CF24EE96D400CF3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9CE24EE96D400CF3661 /* Assets.xcassets */; };
 		9D54B9D224EE96D400CF3661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9D024EE96D400CF3661 /* LaunchScreen.storyboard */; };
@@ -17,6 +25,14 @@
 /* Begin PBXFileReference section */
 		9D1AE84924EE98E5006D3AEF /* CompositeAppDelegateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegateConfigurator.swift; sourceTree = "<group>"; };
 		9D1AE84B24EE991F006D3AEF /* UiAppDelegateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiAppDelegateConfigurator.swift; sourceTree = "<group>"; };
+		9D1AE85124EE9BB7006D3AEF /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		9D1AE85324EE9BD3006D3AEF /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		9D1AE85824EE9C30006D3AEF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		9D1AE85A24EE9CC5006D3AEF /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		9D1AE8D724EEA1A6006D3AEF /* RouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
+		9D1AE8D924EEA9B3006D3AEF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9D1AE8DB24EEAA0B006D3AEF /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		9D1AE8DD24EEAB82006D3AEF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		9D54B9C224EE96D100CF3661 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D54B9C524EE96D100CF3661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		9D54B9CE24EE96D400CF3661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +69,61 @@
 			path = Configurators;
 			sourceTree = "<group>";
 		};
+		9D1AE84D24EE9B69006D3AEF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE84E24EE9B70006D3AEF /* UIKit */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9D1AE84E24EE9B70006D3AEF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE85624EE9C09006D3AEF /* Coordinator */,
+				9D1AE84F24EE9B7A006D3AEF /* Extensions */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		9D1AE84F24EE9B7A006D3AEF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE85024EE9B8A006D3AEF /* UITableView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D1AE85024EE9B8A006D3AEF /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE85124EE9BB7006D3AEF /* UITableView+Dequeue.swift */,
+				9D1AE85324EE9BD3006D3AEF /* UITableView+Register.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		9D1AE85624EE9C09006D3AEF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE8DB24EEAA0B006D3AEF /* BaseCoordinator.swift */,
+				9D1AE8D724EEA1A6006D3AEF /* RouterImpl.swift */,
+				9D1AE8DF24EEABC1006D3AEF /* Protocols */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9D1AE8DF24EEABC1006D3AEF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE8DD24EEAB82006D3AEF /* BaseView.swift */,
+				9D1AE8D924EEA9B3006D3AEF /* Coordinator.swift */,
+				9D1AE85A24EE9CC5006D3AEF /* Presentable.swift */,
+				9D1AE85824EE9C30006D3AEF /* Router.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		9D54B9B924EE96D100CF3661 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9D1AE84724EE98C8006D3AEF /* AppDelegate */,
+				9D1AE84D24EE9B69006D3AEF /* Core */,
 				9D54B9D924EE96EF00CF3661 /* Supporting Files */,
 			);
 			path = Main;
@@ -160,7 +232,15 @@
 			files = (
 				9D54B9C624EE96D100CF3661 /* AppDelegate.swift in Sources */,
 				9D1AE84A24EE98E5006D3AEF /* CompositeAppDelegateConfigurator.swift in Sources */,
+				9D1AE85224EE9BB7006D3AEF /* UITableView+Dequeue.swift in Sources */,
 				9D1AE84C24EE991F006D3AEF /* UiAppDelegateConfigurator.swift in Sources */,
+				9D1AE85924EE9C30006D3AEF /* Router.swift in Sources */,
+				9D1AE8DC24EEAA0B006D3AEF /* BaseCoordinator.swift in Sources */,
+				9D1AE85424EE9BD3006D3AEF /* UITableView+Register.swift in Sources */,
+				9D1AE8D824EEA1A6006D3AEF /* RouterImpl.swift in Sources */,
+				9D1AE85B24EE9CC5006D3AEF /* Presentable.swift in Sources */,
+				9D1AE8DE24EEAB82006D3AEF /* BaseView.swift in Sources */,
+				9D1AE8DA24EEA9B3006D3AEF /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
