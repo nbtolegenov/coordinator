@@ -13,8 +13,6 @@
 		9D1AE85424EE9BD3006D3AEF /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE85324EE9BD3006D3AEF /* UITableView+Register.swift */; };
 		9D1AE8DC24EEAA0B006D3AEF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8DB24EEAA0B006D3AEF /* Coordinator.swift */; };
 		9D1AE8DE24EEAB82006D3AEF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8DD24EEAB82006D3AEF /* BaseView.swift */; };
-		9D1AE8F524EEB151006D3AEF /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8F424EEB151006D3AEF /* AuthCoordinator.swift */; };
-		9D1AE8F924EEB286006D3AEF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE8F824EEB286006D3AEF /* SignInViewController.swift */; };
 		9D1AE90124EEBBE3006D3AEF /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE90024EEBBE3006D3AEF /* CoordinatorFactory.swift */; };
 		9D1AE90324EEBC29006D3AEF /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE90224EEBC29006D3AEF /* ModuleFactory.swift */; };
 		9D1AE90524EEBC48006D3AEF /* AuthModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE90424EEBC48006D3AEF /* AuthModuleFactory.swift */; };
@@ -41,6 +39,8 @@
 		9D1AE95124EFA65D006D3AEF /* SmsVerifyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE95024EFA65D006D3AEF /* SmsVerifyCoordinator.swift */; };
 		9D1AE95324EFB1D6006D3AEF /* SmsVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D1AE95224EFB1D6006D3AEF /* SmsVerifyViewController.xib */; };
 		9D41DFAE24EFCBBC00D9ED6E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D41DFAD24EFCBBC00D9ED6E /* Router.swift */; };
+		9D41DFB024EFEBAF00D9ED6E /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D41DFAF24EFEBAF00D9ED6E /* AuthCoordinator.swift */; };
+		9D41DFB224EFEBD500D9ED6E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D41DFB124EFEBD500D9ED6E /* SignInViewController.swift */; };
 		9D54B9C624EE96D100CF3661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54B9C524EE96D100CF3661 /* AppDelegate.swift */; };
 		9D54B9CF24EE96D400CF3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9CE24EE96D400CF3661 /* Assets.xcassets */; };
 		9D54B9D224EE96D400CF3661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9D024EE96D400CF3661 /* LaunchScreen.storyboard */; };
@@ -53,8 +53,6 @@
 		9D1AE85324EE9BD3006D3AEF /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
 		9D1AE8DB24EEAA0B006D3AEF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9D1AE8DD24EEAB82006D3AEF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		9D1AE8F424EEB151006D3AEF /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthCoordinator.swift; path = ../../../../../Documents/AuthCoordinator.swift; sourceTree = "<group>"; };
-		9D1AE8F824EEB286006D3AEF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../../../../../../../Documents/SignInViewController.swift; sourceTree = "<group>"; };
 		9D1AE90024EEBBE3006D3AEF /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		9D1AE90224EEBC29006D3AEF /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		9D1AE90424EEBC48006D3AEF /* AuthModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleFactory.swift; sourceTree = "<group>"; };
@@ -81,8 +79,10 @@
 		9D1AE95024EFA65D006D3AEF /* SmsVerifyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsVerifyCoordinator.swift; sourceTree = "<group>"; };
 		9D1AE95224EFB1D6006D3AEF /* SmsVerifyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmsVerifyViewController.xib; sourceTree = "<group>"; };
 		9D41DFAD24EFCBBC00D9ED6E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		9D41DFAF24EFEBAF00D9ED6E /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		9D41DFB124EFEBD500D9ED6E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9D54B9C224EE96D100CF3661 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D54B9C524EE96D100CF3661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		9D54B9C524EE96D100CF3661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D54B9CE24EE96D400CF3661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D54B9D124EE96D400CF3661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D54B9D324EE96D400CF3661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 		9D1AE8F224EEB117006D3AEF /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				9D1AE8F424EEB151006D3AEF /* AuthCoordinator.swift */,
+				9D41DFAF24EFEBAF00D9ED6E /* AuthCoordinator.swift */,
 				9D1AE90424EEBC48006D3AEF /* AuthModuleFactory.swift */,
 				9D1AE8F624EEB267006D3AEF /* Modules */,
 			);
@@ -209,7 +209,7 @@
 		9D1AE8F724EEB275006D3AEF /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				9D1AE8F824EEB286006D3AEF /* SignInViewController.swift */,
+				9D41DFB124EFEBD500D9ED6E /* SignInViewController.swift */,
 				9D1AE90824EEC1E2006D3AEF /* SignInViewController.xib */,
 			);
 			path = SignIn;
@@ -470,11 +470,12 @@
 				9D1AE93124EF9734006D3AEF /* PropertyFormatter.swift in Sources */,
 				9D1AE90C24EEC276006D3AEF /* ApplicationCoordinator.swift in Sources */,
 				9D1AE93824EF9B56006D3AEF /* NetworkProvider.swift in Sources */,
+				9D41DFB224EFEBD500D9ED6E /* SignInViewController.swift in Sources */,
 				9D1AE90124EEBBE3006D3AEF /* CoordinatorFactory.swift in Sources */,
 				9D1AE94D24EFA53B006D3AEF /* SmsVerifyModuleFactory.swift in Sources */,
 				9D1AE93324EF9747006D3AEF /* PhoneNumberFormatter.swift in Sources */,
+				9D41DFB024EFEBAF00D9ED6E /* AuthCoordinator.swift in Sources */,
 				9D1AE91424EF8DBF006D3AEF /* PrimaryButton.swift in Sources */,
-				9D1AE8F924EEB286006D3AEF /* SignInViewController.swift in Sources */,
 				9D1AE90324EEBC29006D3AEF /* ModuleFactory.swift in Sources */,
 				9D1AE8DC24EEAA0B006D3AEF /* Coordinator.swift in Sources */,
 				9D1AE94024EFA0CF006D3AEF /* SmsVerifyProvider.swift in Sources */,
@@ -487,7 +488,6 @@
 				9D1AE94724EFA262006D3AEF /* SmsDigitsStackView.swift in Sources */,
 				9D1AE94A24EFA2CA006D3AEF /* SmsVerifyViewController.swift in Sources */,
 				9D1AE94F24EFA5AB006D3AEF /* SmsVerifyInputParameters.swift in Sources */,
-				9D1AE8F524EEB151006D3AEF /* AuthCoordinator.swift in Sources */,
 				9D1AE90724EEBF11006D3AEF /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
