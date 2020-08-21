@@ -6,6 +6,7 @@
 //  Copyright © 2020 Nurlan Tolegenov. All rights reserved.
 //
 
+import NVActivityIndicatorView
 import UIKit
 
 final class UiAppDelegateConfigurator: AppDelegateConfigurator {
@@ -17,9 +18,16 @@ final class UiAppDelegateConfigurator: AppDelegateConfigurator {
     )
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupNVActivityIndicatorView()
         setupWindow()
         applicationCoordinator.start()
         return true
+    }
+    
+    private func setupNVActivityIndicatorView() {
+        NVActivityIndicatorView.DEFAULT_TYPE = .circleStrokeSpin
+        NVActivityIndicatorView.DEFAULT_BLOCKER_SIZE = CGSize(width: 48, height: 48)
+        NVActivityIndicatorView.DEFAULT_BLOCKER_DISPLAY_TIME_THRESHOLD = 100
     }
 
     private func setupWindow() {

@@ -33,6 +33,8 @@
 		9D1AE92D24EF9615006D3AEF /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE92C24EF9615006D3AEF /* PhoneNumberTextField.swift */; };
 		9D1AE93124EF9734006D3AEF /* PropertyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93024EF9734006D3AEF /* PropertyFormatter.swift */; };
 		9D1AE93324EF9747006D3AEF /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93224EF9747006D3AEF /* PhoneNumberFormatter.swift */; };
+		9D1AE93624EF9B35006D3AEF /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93524EF9B35006D3AEF /* AuthProvider.swift */; };
+		9D1AE93824EF9B56006D3AEF /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93724EF9B56006D3AEF /* NetworkProvider.swift */; };
 		9D54B9C624EE96D100CF3661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54B9C524EE96D100CF3661 /* AppDelegate.swift */; };
 		9D54B9CF24EE96D400CF3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9CE24EE96D400CF3661 /* Assets.xcassets */; };
 		9D54B9D224EE96D400CF3661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9D024EE96D400CF3661 /* LaunchScreen.storyboard */; };
@@ -66,6 +68,8 @@
 		9D1AE92C24EF9615006D3AEF /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
 		9D1AE93024EF9734006D3AEF /* PropertyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFormatter.swift; sourceTree = "<group>"; };
 		9D1AE93224EF9747006D3AEF /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
+		9D1AE93524EF9B35006D3AEF /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		9D1AE93724EF9B56006D3AEF /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		9D54B9C224EE96D100CF3661 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D54B9C524EE96D100CF3661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		9D54B9CE24EE96D400CF3661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +117,7 @@
 			children = (
 				9D1AE91224EF8D68006D3AEF /* UIComponents */,
 				9D1AE92E24EF96F6006D3AEF /* Services */,
-				9D1AE85624EE9C09006D3AEF /* Coordinator */,
+				9D1AE93424EF9B1F006D3AEF /* Providers */,
 				9D1AE84E24EE9B70006D3AEF /* UIKit */,
 			);
 			path = Core;
@@ -122,6 +126,7 @@
 		9D1AE84E24EE9B70006D3AEF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9D1AE85624EE9C09006D3AEF /* Coordinator */,
 				9D1AE84F24EE9B7A006D3AEF /* Extensions */,
 			);
 			path = UIKit;
@@ -265,6 +270,15 @@
 			path = Formatters;
 			sourceTree = "<group>";
 		};
+		9D1AE93424EF9B1F006D3AEF /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE93524EF9B35006D3AEF /* AuthProvider.swift */,
+				9D1AE93724EF9B56006D3AEF /* NetworkProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		9D54B9B924EE96D100CF3661 = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +420,7 @@
 				9D1AE84C24EE991F006D3AEF /* UiAppDelegateConfigurator.swift in Sources */,
 				9D1AE93124EF9734006D3AEF /* PropertyFormatter.swift in Sources */,
 				9D1AE90C24EEC276006D3AEF /* ApplicationCoordinator.swift in Sources */,
+				9D1AE93824EF9B56006D3AEF /* NetworkProvider.swift in Sources */,
 				9D1AE90124EEBBE3006D3AEF /* CoordinatorFactory.swift in Sources */,
 				9D1AE93324EF9747006D3AEF /* PhoneNumberFormatter.swift in Sources */,
 				9D1AE91424EF8DBF006D3AEF /* PrimaryButton.swift in Sources */,
@@ -417,6 +432,7 @@
 				9D1AE85424EE9BD3006D3AEF /* UITableView+Register.swift in Sources */,
 				9D1AE8D824EEA1A6006D3AEF /* Router.swift in Sources */,
 				9D1AE8DE24EEAB82006D3AEF /* BaseView.swift in Sources */,
+				9D1AE93624EF9B35006D3AEF /* AuthProvider.swift in Sources */,
 				9D1AE8F524EEB151006D3AEF /* AuthCoordinator.swift in Sources */,
 				9D1AE90724EEBF11006D3AEF /* Presentable.swift in Sources */,
 			);

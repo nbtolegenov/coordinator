@@ -15,7 +15,7 @@ protocol AuthModuleFactory: class {
 
 extension ModuleFactory: AuthModuleFactory {
     func makeSignIn() -> SignInView {
-        SignInViewController()
+        SignInViewController(provider: NetworkProvider(), formatter: PropertyFormatter())
     }
     
     func makeSignUp() -> SignUpView {
