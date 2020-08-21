@@ -30,6 +30,9 @@
 		9D1AE92224EF9211006D3AEF /* FBLPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1AE91A24EF9211006D3AEF /* FBLPromises.framework */; };
 		9D1AE92624EF9211006D3AEF /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1AE91C24EF9211006D3AEF /* Swinject.framework */; };
 		9D1AE92824EF9212006D3AEF /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1AE91D24EF9211006D3AEF /* KeychainAccess.framework */; };
+		9D1AE92D24EF9615006D3AEF /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE92C24EF9615006D3AEF /* PhoneNumberTextField.swift */; };
+		9D1AE93124EF9734006D3AEF /* PropertyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93024EF9734006D3AEF /* PropertyFormatter.swift */; };
+		9D1AE93324EF9747006D3AEF /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93224EF9747006D3AEF /* PhoneNumberFormatter.swift */; };
 		9D54B9C624EE96D100CF3661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54B9C524EE96D100CF3661 /* AppDelegate.swift */; };
 		9D54B9CF24EE96D400CF3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9CE24EE96D400CF3661 /* Assets.xcassets */; };
 		9D54B9D224EE96D400CF3661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9D024EE96D400CF3661 /* LaunchScreen.storyboard */; };
@@ -60,6 +63,9 @@
 		9D1AE91B24EF9211006D3AEF /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		9D1AE91C24EF9211006D3AEF /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		9D1AE91D24EF9211006D3AEF /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		9D1AE92C24EF9615006D3AEF /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
+		9D1AE93024EF9734006D3AEF /* PropertyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFormatter.swift; sourceTree = "<group>"; };
+		9D1AE93224EF9747006D3AEF /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
 		9D54B9C224EE96D100CF3661 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D54B9C524EE96D100CF3661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		9D54B9CE24EE96D400CF3661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				9D1AE91224EF8D68006D3AEF /* UIComponents */,
+				9D1AE92E24EF96F6006D3AEF /* Services */,
 				9D1AE85624EE9C09006D3AEF /* Coordinator */,
 				9D1AE84E24EE9B70006D3AEF /* UIKit */,
 			);
@@ -222,6 +229,7 @@
 		9D1AE91224EF8D68006D3AEF /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9D1AE92C24EF9615006D3AEF /* PhoneNumberTextField.swift */,
 				9D1AE91324EF8DBF006D3AEF /* PrimaryButton.swift */,
 			);
 			path = UIComponents;
@@ -238,6 +246,23 @@
 				9D1AE91C24EF9211006D3AEF /* Swinject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D1AE92E24EF96F6006D3AEF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE92F24EF9726006D3AEF /* Formatters */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9D1AE92F24EF9726006D3AEF /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				9D1AE93224EF9747006D3AEF /* PhoneNumberFormatter.swift */,
+				9D1AE93024EF9734006D3AEF /* PropertyFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 		9D54B9B924EE96D100CF3661 = {
@@ -379,12 +404,15 @@
 				9D1AE90524EEBC48006D3AEF /* AuthModuleFactory.swift in Sources */,
 				9D1AE85224EE9BB7006D3AEF /* UITableView+Dequeue.swift in Sources */,
 				9D1AE84C24EE991F006D3AEF /* UiAppDelegateConfigurator.swift in Sources */,
+				9D1AE93124EF9734006D3AEF /* PropertyFormatter.swift in Sources */,
 				9D1AE90C24EEC276006D3AEF /* ApplicationCoordinator.swift in Sources */,
 				9D1AE90124EEBBE3006D3AEF /* CoordinatorFactory.swift in Sources */,
+				9D1AE93324EF9747006D3AEF /* PhoneNumberFormatter.swift in Sources */,
 				9D1AE91424EF8DBF006D3AEF /* PrimaryButton.swift in Sources */,
 				9D1AE8F924EEB286006D3AEF /* SignInViewController.swift in Sources */,
 				9D1AE90324EEBC29006D3AEF /* ModuleFactory.swift in Sources */,
 				9D1AE8DC24EEAA0B006D3AEF /* BaseCoordinator.swift in Sources */,
+				9D1AE92D24EF9615006D3AEF /* PhoneNumberTextField.swift in Sources */,
 				9D1AE90F24EEC4F0006D3AEF /* SignUpViewController.swift in Sources */,
 				9D1AE85424EE9BD3006D3AEF /* UITableView+Register.swift in Sources */,
 				9D1AE8D824EEA1A6006D3AEF /* Router.swift in Sources */,
