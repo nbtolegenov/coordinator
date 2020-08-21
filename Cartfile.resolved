@@ -1,0 +1,4 @@
+github "Swinject/Swinject" "2.7.1"
+github "google/promises" "1.2.10"
+github "kishikawakatsumi/KeychainAccess" "v4.2.0"
+github "ninjaprox/NVActivityIndicatorView" "4.8.0"
