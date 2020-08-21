@@ -9,7 +9,12 @@
 import Foundation
 
 class Coordinator {
-    var childCoordinators: [Coordinator] = []
+    let router: Router
+    private(set) var childCoordinators: [Coordinator] = []
+    
+    init(router: Router) {
+        self.router = router
+    }
     
     func start() {}
     

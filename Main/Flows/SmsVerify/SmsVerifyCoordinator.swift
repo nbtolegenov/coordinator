@@ -9,20 +9,21 @@
 import Foundation
 
 protocol SmsVerifyCoordinatorOutput: class {
+    var onClose: (() -> Void)? { get set }
     var onFinish: ((VerifySmsResponse) -> Void)? { get set }
 }
 
 final class SmsVerifyCoordinator: Coordinator, SmsVerifyCoordinatorOutput {
+    var onClose: (() -> Void)?
     var onFinish: ((VerifySmsResponse) -> Void)?
     
-    private let router: Router
     private let inputParameters: SmsVerifyInputParameters
     private let moduleFactory: SmsVerifyModuleFactory
     
     init(router: Router, inputParameters: SmsVerifyInputParameters, moduleFactory: SmsVerifyModuleFactory) {
-        self.router = router
         self.inputParameters = inputParameters
         self.moduleFactory = moduleFactory
+        super.init(router: router)
     }
     
     override func start() {
@@ -34,6 +35,8 @@ final class SmsVerifyCoordinator: Coordinator, SmsVerifyCoordinatorOutput {
         smsVerify.onSmsVerifyFinish = { [weak self] response in
             self?.onFinish?(response)
         }
-        router.push(smsVerify)
+        router.push(smsVerify) { [weak self] in
+            self?.onClose?()
+        }
     }
 }
