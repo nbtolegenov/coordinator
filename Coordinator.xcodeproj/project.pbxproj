@@ -35,6 +35,7 @@
 		9D1AE93324EF9747006D3AEF /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93224EF9747006D3AEF /* PhoneNumberFormatter.swift */; };
 		9D1AE93624EF9B35006D3AEF /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93524EF9B35006D3AEF /* AuthProvider.swift */; };
 		9D1AE93824EF9B56006D3AEF /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93724EF9B56006D3AEF /* NetworkProvider.swift */; };
+		9D1AE94024EFA0CF006D3AEF /* SmsVerifyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AE93F24EFA0CF006D3AEF /* SmsVerifyProvider.swift */; };
 		9D54B9C624EE96D100CF3661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54B9C524EE96D100CF3661 /* AppDelegate.swift */; };
 		9D54B9CF24EE96D400CF3661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9CE24EE96D400CF3661 /* Assets.xcassets */; };
 		9D54B9D224EE96D400CF3661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D54B9D024EE96D400CF3661 /* LaunchScreen.storyboard */; };
@@ -70,6 +71,7 @@
 		9D1AE93224EF9747006D3AEF /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
 		9D1AE93524EF9B35006D3AEF /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		9D1AE93724EF9B56006D3AEF /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		9D1AE93F24EFA0CF006D3AEF /* SmsVerifyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsVerifyProvider.swift; sourceTree = "<group>"; };
 		9D54B9C224EE96D100CF3661 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D54B9C524EE96D100CF3661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		9D54B9CE24EE96D400CF3661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				9D1AE93524EF9B35006D3AEF /* AuthProvider.swift */,
 				9D1AE93724EF9B56006D3AEF /* NetworkProvider.swift */,
+				9D1AE93F24EFA0CF006D3AEF /* SmsVerifyProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				9D1AE8F924EEB286006D3AEF /* SignInViewController.swift in Sources */,
 				9D1AE90324EEBC29006D3AEF /* ModuleFactory.swift in Sources */,
 				9D1AE8DC24EEAA0B006D3AEF /* BaseCoordinator.swift in Sources */,
+				9D1AE94024EFA0CF006D3AEF /* SmsVerifyProvider.swift in Sources */,
 				9D1AE92D24EF9615006D3AEF /* PhoneNumberTextField.swift in Sources */,
 				9D1AE90F24EEC4F0006D3AEF /* SignUpViewController.swift in Sources */,
 				9D1AE85424EE9BD3006D3AEF /* UITableView+Register.swift in Sources */,
