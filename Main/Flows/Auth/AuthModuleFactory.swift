@@ -19,6 +19,6 @@ extension ModuleFactory: AuthModuleFactory {
     }
     
     func makeSignUp() -> SignUpView {
-        SignUpViewController()
+        SignUpViewController(provider: NetworkProvider(), formatter: PropertyFormatter())
     }
 }
