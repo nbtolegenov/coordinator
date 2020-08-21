@@ -47,6 +47,10 @@ final class Router {
         push(module, animated: animated, completion: nil)
     }
     
+    func push(_ module: Presentable?, completion: (() -> Void)?) {
+        push(module, animated: true, completion: completion)
+    }
+    
     func push(_ module: Presentable?, animated: Bool, completion: (() -> Void)?) {
         push(module, animated: animated, hideBottomBarWhenPushed: false, completion: nil)
     }

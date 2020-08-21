@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmsVerifyViewController" customModule="Coordinator" customModuleProvider="target">
+            <connections>
+                <outlet property="digitsStackView" destination="1kZ-5A-Vqg" id="XEV-5i-f8h"/>
+                <outlet property="titleLabel" destination="LKC-oN-hp8" id="WV0-xX-PbJ"/>
+                <outlet property="view" destination="S34-6g-ml5" id="kLK-jj-weV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="S34-6g-ml5">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS sent to +7 747 546 54 80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKC-oN-hp8">
+                    <rect key="frame" x="95.5" y="112" width="223.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="208" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-5A-Vqg" customClass="SmsDigitsStackView" customModule="Coordinator" customModuleProvider="target">
+                    <rect key="frame" x="103" y="175.5" width="208" height="48"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="LKC-oN-hp8" firstAttribute="centerX" secondItem="ypH-7G-R41" secondAttribute="centerX" id="Cbu-VI-FLf"/>
+                <constraint firstItem="LKC-oN-hp8" firstAttribute="top" secondItem="ypH-7G-R41" secondAttribute="top" constant="24" id="Loy-t0-xb6"/>
+                <constraint firstItem="1kZ-5A-Vqg" firstAttribute="centerX" secondItem="ypH-7G-R41" secondAttribute="centerX" id="PCr-9J-j68"/>
+                <constraint firstItem="1kZ-5A-Vqg" firstAttribute="top" secondItem="LKC-oN-hp8" secondAttribute="bottom" constant="44" id="n4w-qG-qud"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="ypH-7G-R41"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>

@@ -15,7 +15,7 @@ protocol SmsVerifyProvider {
 
 extension NetworkProvider: SmsVerifyProvider {
     func verifySms(phoneNumber: String, smsId: String, code: String) -> Promise<VerifySmsResponse> {
-        Promise(VerifySmsResponse(token: "Token"))
+        Promise(VerifySmsResponse(token: "Token")).delay(1)
     }
 }
 

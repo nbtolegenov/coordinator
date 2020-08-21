@@ -10,6 +10,10 @@ import Foundation
 
 final class CoordinatorFactory {
     func makeAuth(router: Router) -> Coordinator & AuthCoordinatorOutput {
-        AuthCoordinator(router: router, moduleFactory: ModuleFactory())
+        AuthCoordinator(router: router, coordinatorFactory: CoordinatorFactory(), moduleFactory: ModuleFactory())
+    }
+    
+    func makeSmsVerify(router: Router, inputParameters: SmsVerifyInputParameters) -> Coordinator & SmsVerifyCoordinatorOutput {
+        SmsVerifyCoordinator(router: router, inputParameters: inputParameters, moduleFactory: ModuleFactory())
     }
 }
