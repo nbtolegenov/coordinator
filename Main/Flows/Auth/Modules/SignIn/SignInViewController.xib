@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="Coordinator" customModuleProvider="target">
             <connections>
+                <outlet property="phoneNumberTextField" destination="7fs-Vf-x1l" id="GTn-tR-0EX"/>
                 <outlet property="view" destination="iN0-l3-epB" id="z9Y-Ls-2Ko"/>
             </connections>
         </placeholder>

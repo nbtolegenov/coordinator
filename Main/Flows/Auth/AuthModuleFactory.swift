@@ -15,10 +15,10 @@ protocol AuthModuleFactory: class {
 
 extension ModuleFactory: AuthModuleFactory {
     func makeSignIn() -> SignInView {
-        SignInViewController()
+        SignInViewController(provider: NetworkProvider(), formatter: PropertyFormatter())
     }
     
     func makeSignUp() -> SignUpView {
-        SignUpViewController()
+        SignUpViewController(provider: NetworkProvider(), formatter: PropertyFormatter())
     }
 }
