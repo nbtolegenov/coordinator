@@ -10,11 +10,10 @@ import UIKit
 
 final class ApplicationCoordinator: Coordinator {
     private let coordinatorFactory: CoordinatorFactory
-    private let router: Router
     
     init(router: Router, coordinatorFactory: CoordinatorFactory) {
-        self.router = router
         self.coordinatorFactory = coordinatorFactory
+        super.init(router: router)
     }
     
     override func start() {

@@ -10,11 +10,11 @@ import NVActivityIndicatorView
 import UIKit
 
 protocol SignUpView: BaseView {
-    var onSignUpDidFinish: ((String, SignUpResponse) -> Void)? { get set }
+    var onSignUpFinish: ((String, SignUpResponse) -> Void)? { get set }
 }
 
 final class SignUpViewController: UIViewController, SignUpView, NVActivityIndicatorViewable {
-    var onSignUpDidFinish: ((String, SignUpResponse) -> Void)?
+    var onSignUpFinish: ((String, SignUpResponse) -> Void)?
     
     private let provider: AuthProvider
     private let formatter: PhoneNumberFormatter
@@ -45,7 +45,7 @@ final class SignUpViewController: UIViewController, SignUpView, NVActivityIndica
         startAnimating()
         provider.signUp(phoneNumber: phoneNumber).then { [weak self] response in
             guard let self = self else { return }
-            self.onSignUpDidFinish?(self.phoneNumber, response)
+            self.onSignUpFinish?(self.phoneNumber, response)
         }.always { [weak self] in
             self?.stopAnimating()
         }
