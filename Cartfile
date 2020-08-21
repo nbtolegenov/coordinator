@@ -1,4 +1,2 @@
-github "kishikawakatsumi/KeychainAccess" == 4.2.0
 github "ninjaprox/NVActivityIndicatorView" == 4.8.0
 github "google/promises" == 1.2.10
-github "Swinject/Swinject" == 2.7.1

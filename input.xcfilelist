@@ -1,5 +1,3 @@
 $(SRCROOT)/Carthage/Build/iOS/FBLPromises.framework
-$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework
 $(SRCROOT)/Carthage/Build/iOS/NVActivityIndicatorView.framework
 $(SRCROOT)/Carthage/Build/iOS/Promises.framework
-$(SRCROOT)/Carthage/Build/iOS/Swinject.framework
